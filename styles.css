@@ -1,0 +1,208 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 78%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+  font-family: monospace, sans-serif;
+  line-height: 1.6;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #03045E;
+  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: auto;
+}
+
+.nav-list li {
+  margin: 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.nav-list li a:hover {
+  background-color: inherit;
+  color: #0096c7;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  border-radius: 6px;
+  padding: 6px 14px;
+  background: #274472;
+  color: aliceblue;
+  border: none;
+}
+
+button a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+#about {
+  min-height: 100vh;
+  background-color: #023e8a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+  background-image: linear-gradient(to bottom, #023e8a, #0077b6);
+  text-align: center;
+}
+
+
+#work {
+  padding: 50px 20px;
+  background-color: #0077b6; /* Match the base color of the #about section */
+  background-image: linear-gradient(to bottom, #0077b6, #0096c7); /* Adjust the gradient to blend smoothly */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+#contact {
+  background-color: #0096c7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 20 20 0 20;
+  border-top: 30;
+  color: aliceblue;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+.tagline {
+  font-style: italic;
+  margin: 20px;
+  margin-top: 0%;
+  color: beige;
+}
+
+.description {
+  color: aliceblue;
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: justify;
+  padding: 0 50px;
+}
+
+.social-icons a {
+  color: whitesmoke;
+  margin: 20px;
+  transition: color 0.3s ease; /* Adjust transition speed */
+}
+
+.social-icons a:hover {
+  color: black;
+}
+
+.social-icons {
+  margin: 0 auto;
+}
+
+.section-header{
+  background-color: #0077b6; /* Match background color of projects section */
+  color: aliceblue;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 10px;  /* Adjust margin-bottom if necessary */
+}
+
+.section-intro {
+  font-size: 1.5rem;
+  text-align: center;
+  color: beige;
+  margin-bottom: 40px;  /* Adjust margin-bottom if necessary */
+}
+
+.project-image {
+  margin: 20px;
+}
+
+.project-title {
+  color: antiquewhite;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-details h2 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icons a {
+  margin: 20px;
+  color: black;
+}
+
+.contact-icons a:hover {
+  color: beige;
+}
