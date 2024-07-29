@@ -120,7 +120,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   color: aliceblue;
 }
@@ -193,12 +193,14 @@ h2 {
   padding-top: 200px;
 }
 
+
 .contact-icons {
   display: flex;
   justify-content: center;
 }
 
 .contact-icons a {
+  font-family: monospace, sans-serif;
   margin: 20px;
   color: black;
 }
